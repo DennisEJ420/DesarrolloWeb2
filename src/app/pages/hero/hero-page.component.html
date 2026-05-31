@@ -1,0 +1,40 @@
+<h1>
+    {{ name }}
+</h1>
+<div>
+    <table>
+        <tr>
+            <td>Nombre:</td>
+            <td>{{ name }}</td>
+        </tr>
+        <tr>
+            <td>Edad:</td>
+            <td>{{ age }}</td>
+        </tr>
+        <tr>
+            <td>Metodo:</td>
+            <td>{{ getHeroDescription() }}</td>
+        </tr>
+        <tr>
+            <td>Capitalizado:</td>
+            <td>{{ name.toUpperCase() }}</td>
+        </tr>
+    </table>
+</div>
+
+<div>
+    <table>
+        <tr>
+        </tr>
+    </table>
+</div>
+
+<button class="btn btn-primary mx-2">
+    Cambiar Nombre
+</button>
+<button class="btn btn-primary mx-2">
+    Cambiar Edad
+</button>
+<button class="btn btn-primary mx-2">
+    Reset
+</button>
