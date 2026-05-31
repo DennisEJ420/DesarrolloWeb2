@@ -29,12 +29,15 @@
     </table>
 </div>
 
-<button class="btn btn-primary mx-2">
-    Cambiar Nombre
-</button>
-<button class="btn btn-primary mx-2">
-    Cambiar Edad
-</button>
-<button class="btn btn-primary mx-2">
-    Reset
-</button>
+<div class="button-container"> <!--agrega el DIV para controlar los botones en el CSS-->
+    <button class="btn btn-primary mx-2" (click)="cambiarHero()"> <!--se agregan los eventos del click-->
+        Cambiar Nombre
+    </button>
+    <button class="btn btn-primary mx-2" (click)="cambiarEdad()">
+        Cambiar Edad
+    </button>
+    <button class="btn btn-primary mx-2" (click)="reset()">
+        Reset
+    </button>
+
+</div>
