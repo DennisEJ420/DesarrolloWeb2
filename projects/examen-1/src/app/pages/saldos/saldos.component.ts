@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   templateUrl: './saldos.component.html',
   styleUrl: './saldos.component.css'
 })
+
 export class SaldosComponent {
+
+  presupuesto = 7000;
+  restante = 5000;
+  gasto = 'Supermercado';
+  monto = 2000;
 
 }

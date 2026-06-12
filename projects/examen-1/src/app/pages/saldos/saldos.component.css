@@ -1,0 +1,57 @@
+/* Contenedor base*/
+.expense-list-card {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.list-title {
+  color: #333333;
+  font-size: 1.45rem;
+  font-weight: 600;
+}
+
+.status-box {
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+}
+
+.box-budget {
+  background-color: #d1e4dc;
+  border-color: #c2dad0;
+  color: #444444;
+}
+
+.text-dark-green {
+  color: #1e5252;
+}
+
+.box-remaining {
+  background-color: #e2e3e5;
+  border-color: #d6d8db;
+  color: #444444;
+}
+
+.status-label {
+  font-weight: 500;
+}
+
+.item-name {
+  color: #333333;
+  font-size: 1rem;
+}
+
+/*capsula del gasto */
+.item-amount-badge {
+  background-color: #555960;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 8px 18px;
+}
+
+.border-bottom-dashed {
+  border-bottom: 1px dashed #e9ecef;
+}
+
+.border-bottom-dashed:last-child {
+  border-bottom: none;
+}

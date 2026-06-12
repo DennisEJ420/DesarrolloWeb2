@@ -1,1 +1,26 @@
-<p>navbar works!</p>
+<nav>
+
+    <a
+        routerLink="/agregar"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Crear Presupuesto
+    </a>
+    |
+    <a
+        routerLink="/administrar"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Administrar Presupuesto
+    </a>
+    |
+    <a
+        routerLink="/saldos"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+        Ver Saldos
+    </a>
+
+</nav>
+
+<hr>

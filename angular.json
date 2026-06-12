@@ -116,6 +116,7 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/examen-1/src/styles.css"
             ],
             "scripts": []
@@ -174,6 +175,7 @@
               }
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "projects/examen-1/src/styles.css"
             ],
             "scripts": []

@@ -1,0 +1,51 @@
+.presupuesto-bg {
+  background: linear-gradient(135deg, #4c8a66 0%, #1e5252 100%); /*fondo degradado verde */
+  min-height: 300px;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.presupuesto-title {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 1.55rem;
+}
+
+/* estilos del input */
+.custom-input {
+  color: #999999;
+  font-size: 1.1rem;
+  border-color: #dcdcdc;
+  padding: 7px;
+}
+
+.custom-input:focus {
+  border-color: #4c8a66;
+  box-shadow: 0 0 0 0.2rem rgba(76, 138, 102, 0.25);
+  color: #444444;
+}
+
+.custom-input::-webkit-outer-spin-button,
+.custom-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.custom-input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/*estilo del bton aceptar */
+.btn-dark-custom {
+  background-color: #555960;
+  border-color: #4a4e54;
+  color: #ffffff;
+  padding: 9px;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.btn-dark-custom:hover {
+  background-color: #43474d;
+  color: #ffffff;
+}

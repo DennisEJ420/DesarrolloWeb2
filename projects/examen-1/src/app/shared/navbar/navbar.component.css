@@ -1,0 +1,29 @@
+nav {
+    background-color: #dddddd;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #143636;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 10px;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    color: #d1e4dc;
+}
+
+/* Página activa */
+nav a.active {
+    color: #01a078 !important;
+    font-weight: 700;
+}
+
+hr {
+    margin: 0;
+    border: none;
+    border-top: 2px solid #d1e4dc;
+}

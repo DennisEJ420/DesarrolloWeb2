@@ -1,0 +1,69 @@
+/*contenedor general */
+.expense-card {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background: linear-gradient(to bottom, #ffffff 85%, #f4f4f4 100%);
+  overflow: hidden;
+}
+
+.expense-title {
+  color: #333333;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+/* etiquetas de los inputs*/
+.expense-label {
+  color: #444444;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+/*estilos de los inputs */
+.expense-input {
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  color: #333333;
+  font-size: 1rem;
+}
+
+.expense-input::placeholder {
+  color: #999999;
+}
+
+.expense-input:focus {
+  border-color: #999999;
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.05);
+}
+
+.expense-input::-webkit-outer-spin-button,
+.expense-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.expense-input[type=number] {
+  -moz-appearance: textfield;
+} 
+
+/* estilos del btn agregar*/
+.btn-expense {
+  background-color: #555960;
+  border: 1px solid #4a4e54;
+  color: #ffffff;
+  padding: 10px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 4px;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.btn-expense:hover {
+  background-color: #43474d;
+  color: #ffffff;
+}
+
+.btn-expense:focus {
+  box-shadow: 0 0 0 0.2rem rgba(85, 89, 96, 0.25);
+}
