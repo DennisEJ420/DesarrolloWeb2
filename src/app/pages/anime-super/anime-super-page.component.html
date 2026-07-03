@@ -1,36 +1,10 @@
-<h2>Anime Component</h2>
+<h2>Anime Super Component</h2>
 <hr>
 <section class="row">
     <div class="col-12 col-sm-6">
-        <h3>
-            Agregar  {{name()}} {{power()}}
-        </h3>
-
-        <input 
-        type="text" 
-        name="" 
-        id="" 
-        placeholder="Nombre" 
-        class="form-control mb-2"
-        [value]="name()"
-        (change)="name.set(txtName.value)"
-        (input)="name.set(txtName.value)"
-        #txtName
-        >
-
-        <input 
-        type="number" 
-        name="" 
-        id="" 
-        placeholder="Poder" 
-        class="form-control mb-2"
-        [value]="power()"
-        (input)="power.set(+txtPower.value)"
-        #txtPower
-        >
-
-        <button class="btn btn-primary" (click)="addCharacter()"> Agregar</button>
-
+        <!-- Inicia Componente de Formulario -->
+         <app-character-form/>
+        <!-- Finaliza Componente de Formulario -->
     </div>
 
     <div class="col-12 col-sm-6">

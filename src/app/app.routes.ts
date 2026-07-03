@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { CounterPageComponent } from './pages/counter/counter.component'; //Se agrega la importación automáticamente
 import { HeroPageComponent } from './pages/hero/hero-page.component'
 import { AnimeComponent } from './pages/anime/anime-page.component';
+import { AnimeSuperComponent } from './pages/anime-super/anime-super-page.component';
 
 export const routes: Routes = [
     {
@@ -15,5 +16,9 @@ export const routes: Routes = [
     {
         path: 'anime',
         component: AnimeComponent
+    },
+    {
+        path: 'anime-super',
+        component: AnimeSuperComponent
     }
 ];

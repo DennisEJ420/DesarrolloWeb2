@@ -1,4 +1,6 @@
 import { Component, signal } from "@angular/core";
+import { CharacterFormComponent } from "../../components/character-form/character-form.component";
+
 interface Character {
     id: number;
     name: string;
@@ -6,11 +8,12 @@ interface Character {
 }
 
 @Component({
-    selector: 'app-anime',
-    templateUrl: './anime-page.component.html'
+    selector: 'app-anime-super',
+    imports:[CharacterFormComponent],
+    templateUrl: './anime-super-page.component.html'
 })
 
-export class AnimeComponent {
+export class AnimeSuperComponent {
     name = signal('');
     power = signal(0);
     characters = signal<Character[]>([
@@ -18,22 +21,26 @@ export class AnimeComponent {
         { id: 2, name: 'Vegeta', power: 8000 },
         { id: 3, name: 'Piccolo', power: 3000 },
         { id: 4, name: 'Yamcha', power: 500 },
-    ])
+    ]);
 
     addCharacter() {
         console.log(this.name(), this.power());
-        if (!this.name() || !this.power() || this.power() <= 0) {
+
+        if (!this.name() || this.power() <= 0) {
             return;
         }
+
         const newCharacter: Character = {
             id: this.characters().length + 1,
             name: this.name(),
             power: this.power()
-        }
-        this.characters().push(newCharacter);
+        };
+
+        this.characters.update(characters => [...characters, newCharacter]);
         this.resetFields();
     }
-    resetFields(){
+
+    resetFields() {
         this.name.set('');
         this.power.set(0);
     }
