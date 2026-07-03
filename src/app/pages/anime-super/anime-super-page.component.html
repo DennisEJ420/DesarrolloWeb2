@@ -1,32 +1,26 @@
 <h2>Anime Super Component</h2>
 <hr>
+
 <section class="row">
-    <div class="col-12 col-sm-6">
+    <div class="col-12 col-sm-6"> 
+        <!-- Se corta el formulario y se pega en character.form para importarlo independiente-->
         <!-- Inicia Componente de Formulario -->
-         <app-character-form/>
+
+        <!-- Emite el evento newCharacter hacia el padre, ejecuta addCharacter($event) y agrega al signal-->
+         <app-character-form (newCharacter)="addCharacter($event)"/>
+
         <!-- Finaliza Componente de Formulario -->
     </div>
+ 
+    <div class="col-12 col-sm-6"> 
+        <!-- El contenido se mueve hacia character-list.component.HTML -->
+        <!-- Inicia Componente de Lista -->
 
-    <div class="col-12 col-sm-6">
-        <h3>
-            Listado
-        </h3>
-        <ul>
-            @for (character of characters(); track character.id) {
-            @if(character.power > 500){
-            <li>
-                <span> {{character.name}} </span>
-                <strong [class.text-danger]="character.power > 9000" [class.text-primary]="character.power <= 9000">
-                    {{character.power}} </strong>
-            </li>
-            }@else{
-            <li>
-                <strong>¡¡¡ Este personaje tiene un Poder muy bajo !!!</strong>
-            </li>
+        <!-- Recibe el array characters desde el signal del padre y se actualiza automáticamente cuando se agrega un personaje -->
+        <app-character-list [characters]="characters()"/>
 
-            }
-            }
-        </ul>
+        <!-- Finaliza Componente de Lista -->
+
     </div>
 
 </section>
