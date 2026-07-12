@@ -6,8 +6,9 @@
         <!-- Se corta el formulario y se pega en character.form para importarlo independiente-->
         <!-- Inicia Componente de Formulario -->
 
-        <!-- Emite el evento newCharacter hacia el padre, ejecuta addCharacter($event) y agrega al signal-->
-         <app-character-form (newCharacter)="addCharacter($event)"/>
+        <!-- Emite el evento newCharacter hacia el padre, ejecuta addCharacter($event) y agrega la signal-->
+         <app-character-form 
+            (newCharacter)="variosService.addCharacter($event)"/> 
 
         <!-- Finaliza Componente de Formulario -->
     </div>
@@ -17,10 +18,10 @@
         <!-- Inicia Componente de Lista -->
 
         <!-- Recibe el array characters desde el signal del padre y se actualiza automáticamente cuando se agrega un personaje -->
-        <app-character-list [characters]="characters()"/>
-
+        <app-character-list 
+            listName = "Listado de Personajes" 
+            [characters]="variosService.characters()"/>  <!--recibe los datos del array characters -->
         <!-- Finaliza Componente de Lista -->
-
     </div>
 
 </section>
