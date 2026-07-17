@@ -1,0 +1,24 @@
+<h4 class="text-center text-muted mb-4 border-bottom pb-2">Listado de Gastos</h4>
+
+<div class="row g-2 mb-4">
+  <div class="col-6">
+    <div class="p-3 text-center rounded fw-semibold shadow-sm text-dark" style="background-color: #d1e7dd;">
+      Presupuesto: ${{ presupuesto || 0 }}
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="p-3 text-center rounded fw-semibold shadow-sm transition" [ngClass]="alertColorClass">
+      Restante: ${{ restante || 0 }}
+    </div>
+  </div>
+</div>
+
+<div class="overflow-y-auto" style="max-height: 200px;">
+  <div *ngFor="let item of listado" class="d-flex justify-content-between align-items-center bg-white border-bottom py-2 px-1">
+    <span class="fw-semibold text-secondary">{{ item.nombre }}</span>
+    <span class="badge rounded-pill bg-secondary px-3 py-2 fs-6 shadow-sm">${{ item.cantidad }}</span>
+  </div>
+  <div *ngIf="listado.length === 0" class="text-center text-muted mt-3 small fst-italic">
+    No hay gastos registrados todavía.
+  </div>
+</div>
